@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "build",
+    "site": "tgfl-merch-rd",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "_DeployCommand_": "firebase deploy --only hosting:{sitename}"
+}
